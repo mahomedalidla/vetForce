@@ -1,0 +1,91 @@
+* {
+  /* background-color: #7e6141; */
+}
+
+header {
+  justify-self: center;
+}
+
+main{
+    margin: 0 13%;
+}
+body{
+    background-color: #7e6141;
+}
+
+.menu {
+    background-color: #7e6141;
+  width: 1200px;
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu img {
+  padding-top: 2%;
+  width: auto;
+  height: auto;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fffbe7;
+}
+
+.menu div {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 48px;
+}
+
+.menu div > button {
+  margin-left: 240px;
+  border: solid 2px #fffbe7;
+  border-radius: 100px;
+  padding: 1rem;
+  width: 166px;
+  height: 51px;
+  color: #fffbe7;
+  background-color: #7e6141;
+}
+
+.hero {
+  height: 90vh;
+}
+
+.hero .bk {
+  filter: blur(4px);
+  position: absolute;
+}
+
+.hero img {
+    background-color: #00ffff00;
+}
+
+
+.hero-div{
+    display: flex;
+    height: 90vh;
+}
+
+.img-hero-dog{
+    /* z-index: 100; */
+    width: auto;
+    height: 95vh;
+    position: absolute;
+    background-color: #00ffff00;
+}
+
+.hero-div .txt{
+    align-content: center;
+    z-index: 100;
+    background-color: #00ffff00;
+}
+
+.hero-div .h-button{
+    width: fit-content;
+    height: fit-content;
+    margin-left: -300px;
+}
