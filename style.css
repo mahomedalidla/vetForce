@@ -2,24 +2,42 @@
   /* background-color: #7e6141; */
 }
 
+.barriecito-regular {
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 header {
   justify-self: center;
 }
 
-main{
-    margin: 0 13%;
+main {
+width: 100vw;
 }
-body{
-    background-color: #7e6141;
+body {
+  background-color: #7e6141;
+  margin: 0px;
+  padding: 0px;
+  justify-items: center;
 }
 
 .menu {
-    background-color: #7e6141;
+  background-color: #7e6141;
   width: 1200px;
   height: 51px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 .menu img {
@@ -44,7 +62,7 @@ body{
   margin-left: 240px;
   border: solid 2px #fffbe7;
   border-radius: 100px;
-  padding: 1rem;
+
   width: 166px;
   height: 51px;
   color: #fffbe7;
@@ -52,7 +70,28 @@ body{
 }
 
 .hero {
-  height: 90vh;
+  /* height: 90vh; */
+ background-image: url("assets/Floating\ food.png");
+ background-repeat: no-repeat;
+  display: grid;
+  width: 1200px;
+}
+
+.hero h1 {
+  color: #d0a56f;
+  font-size: 240px;
+  margin: 0;
+}
+
+.hero h2 {
+  color: #fffbe7;
+  font-size: 64px;
+}
+
+.hero p {
+  font-family: roboto;
+  font-size: 16px;
+  color: #fffbe7;
 }
 
 .hero .bk {
@@ -61,31 +100,38 @@ body{
 }
 
 .hero img {
-    background-color: #00ffff00;
+  background-color: #00ffff00;
 }
 
-
-.hero-div{
-    display: flex;
-    height: 90vh;
+.hero-div {
+  
+  /* height: 100%; */
+  grid-column: 2;
 }
 
-.img-hero-dog{
-    /* z-index: 100; */
-    width: auto;
-    height: 95vh;
-    position: absolute;
-    background-color: #00ffff00;
+.img-hero-dog {
+  /* z-index: 100; */
+  /* width: auto; */
+  position: absolute;
+  background-color: #00ffff00;
 }
 
-.hero-div .txt{
-    align-content: center;
-    z-index: 100;
-    background-color: #00ffff00;
+.hero-div .txt {
+  align-content: center;
+  z-index: 100;
+  background-color: #00ffff00;
 }
 
-.hero-div .h-button{
-    width: fit-content;
-    height: fit-content;
-    margin-left: -300px;
+.hero-div .h-button {
+  width: fit-content;
+  height: fit-content;
+  margin-left: -300px;
+  margin-top: -68px;
+}
+
+.hero-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
 }
